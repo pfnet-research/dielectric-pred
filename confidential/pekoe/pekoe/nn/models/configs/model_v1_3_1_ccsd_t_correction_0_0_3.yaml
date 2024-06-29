@@ -1,9 +1,0 @@
-# NOTE: the version prefix has to be matched with the teanet version to share the arguments of forward
-version: v1.3.1+ccsd(t)_correction_0.0.3
-arch: teanet_v1_3_node_feature_mlp
-weights: model_v1_3_1_ccsd_t_correction_0_0_3.pt
-calc_modes: ["crystal_u0", "crystal"]
-elements_supported: [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-parameters:
-  activation: ssp  
-  n_hiddens: [128, 128, 128, 128, 128, 128, 128]

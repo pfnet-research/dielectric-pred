@@ -1,6 +1,0 @@
-version: v1.4.1
-arch: pfp_binary
-calc_modes: ["crystal_u0", "crystal", "molecule", "oc20"]
-default_calc_mode: "crystal_u0"
-parameters:
-  path_lib: pfp.nn.models.crystal.lib.libinfer

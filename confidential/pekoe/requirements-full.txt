@@ -1,3 +1,0 @@
-cupy
-pytorch-pfn-extras
--e ./extensions/teanet_conv_helper

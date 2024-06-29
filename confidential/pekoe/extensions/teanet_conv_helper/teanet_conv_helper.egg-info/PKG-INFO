@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: teanet-conv-helper
-Version: 1.13.3
-Summary: teanet-conv-helper: Optional module for pekoe
-Author: Preferred Networks, Inc
-Author-email: chem@preferred.jp
-Requires-Dist: torch
