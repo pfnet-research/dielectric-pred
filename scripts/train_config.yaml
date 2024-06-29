@@ -1,0 +1,32 @@
+Seed: 3
+Train:
+  target: electronic
+  num_workers: 12                   # number of workers for dataloader
+  dataset: ../data/mp_dielectric.json    # path to the processed database
+  batch: 64                         # batch size for training and validation
+  epoch: 5                       # training epoch
+  patience: 200                     # patience of early stopping
+  lr: 0.0001                        # learning rate
+  accelerator: gpu                  # cpu, gpu, tpu
+  device:
+  - 3                               # which gpu to use, 0 means cuda:0
+  save_path: ../confidential/checkpoints/    # path to save outputs
+  gradient_clip: 2.0
+
+Model:
+  pfp_layer: 3                   # embedding of i-th intermediate layer from PFP
+  train_pfp: False
+  ns_feat:                       # dim of node scalars in Teanet
+  nv_feat:                       # dim of node vectors in Teanet
+  nt_feat:                       # dim of node tensors in Teanet
+  es_feat:                       # dim of edge scalars in Teanet
+  ev_feat:                       # dim of edge vectors in Teanet
+  latent_feat: 64                   # dim of latent features in Gated Equivariant block
+  n_gate_layers: 2                  # num of stacked Gated Equivariant blocks
+  dropout_rate: 0.                  # dropout rate in Gated Equivariant blocks
+  residual: True                    # whether to use residual connection
+  gate_sigmoid: True                # whether to add a sigmoid function for gating node vectors/tensors
+  mlp_layer: 3                      # num of mlp layers for node scalar readout
+  integrate_es_ev: True                 # whether edge scalars/vectors are used during training
+  integrate_nv_nt: True                 # whether node vectors/tensors are used during training
+  apply_mask: False                 # whether to mask off-diag elements during training

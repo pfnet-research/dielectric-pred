@@ -1,0 +1,41 @@
+version: v1.3.0
+arch: teanet_v1_3
+weights: model_v1_3_0.pt
+calc_modes: ["crystal_u0", "crystal", "molecule", "oc20"]
+elements_supported: [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+parameters:
+  activation: ssp
+  atom_embedding: 3
+  atom_embedding_dict: {"1": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+  atom_vec_append: 8
+  cutoff:
+  - 3.0
+  - 3.0
+  - 4.0
+  - 6.0
+  - 6.0
+  cutoff_function: invnegexp
+  dim: 256
+  dim_edge: 256
+  dim_vector: 128
+  dim_middle: 128
+  dim_charge: 128
+  dim_lntwobody: 128
+  fix_twobody: true
+  in_channels: 120
+  in_channels_edge: 1
+  is_inference: true
+  n_conv_layers: 5
+  out_dim: 1
+  output_every_layer: false
+  repulsion_twobody_cutoff: 3.0
+  shrink_edge: true
+  twobody_cutoff:
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 0.0
+  use_init_layer: false
+  use_layer_twobody: false
+  use_mlp_layer: false

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pfp-base
+Version: 1.13.3
+Summary: Preferred Neural Network Potential (Binary version)
+Author: Preferred Networks, Inc
+Author-email: chem@preferred.jp
+Requires-Dist: ase>=3.19.3
+Requires-Dist: numpy>=1.18.1
+Requires-Dist: PyYAML>=5.1.2

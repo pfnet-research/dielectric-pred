@@ -1,0 +1,39 @@
+[tool.pysen]
+version = "0.10.2"
+
+[tool.pysen-cli]
+settings_dir = "."
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = true
+isort_known_first_party = [
+  "pekoe",
+  "pfp",
+  "chicle",
+  "batch_calculate",
+  "diamond",
+  "graphene_sheets",
+  "iron_oxide_adsorp",
+  "mep",
+  "teanet_conv_helper",
+]
+line_length = 99
+mypy_ignore_packages = [
+  "numpy.*",
+  "torch.*",
+]
+mypy_path = ["stubs"]
+mypy_preset = "strict"
+py_version = "py38"
+
+[[tool.pysen.lint.mypy_targets]]
+paths = ["benchmark/dataset", "pekoe", "release/pfp"]
+
+[tool.pysen.lint.source]
+exclude_globs = ["**/*.pyi"]
+excludes = ["stubs"]
+includes = ["pekoe", "release", "tests", "examples", "tasks", ".flexci"]
+

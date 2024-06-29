@@ -1,0 +1,5 @@
+dacite==1.6.0
+pytorch-pfn-extras==0.6.5
+torch==1.12.1
+torch-dftd==0.3.0
+-e ./extensions/teanet_conv_helper

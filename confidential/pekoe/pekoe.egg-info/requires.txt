@@ -1,0 +1,33 @@
+dacite
+numpy
+torch
+torch-dftd>=0.3.0
+pfp-base@ file:///mnt/nfs-mnj-archive-02/user/pe_zmao/release/confidential/pekoe/release
+
+[dev]
+black==21.7b0
+click==8.0.2
+flake8-bugbear==22.8.23
+flake8==5.0.4
+isort==5.10.1
+mypy==0.971
+bump2version>=1.0.0
+cclib>=1.7.2
+cmake>=3.24.1
+invoke>=1.7.1
+pysen>=0.10.2
+onnx>=1.8.0
+pandas>=1.4.3
+pytest>=7.1.2
+pytest-cov>=3.0.0
+pytest-xdist>=2.5.0
+pytorch-pfn-extras==0.6.5
+types-pyyaml>=5.4.6
+prose-pfn>=0.7.2
+
+[strict]
+dacite==1.6.0
+pytorch-pfn-extras==0.6.5
+torch==1.12.1
+torch-dftd==0.3.0
+teanet-conv-helper@ file:///mnt/nfs-mnj-archive-02/user/pe_zmao/release/confidential/pekoe/extensions/teanet_conv_helper
