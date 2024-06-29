@@ -1,3 +1,4 @@
 **/__pycache__/
 scripts/pl_checkpoints/
 confidential/
+.DS_Store
