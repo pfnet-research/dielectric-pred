@@ -20,3 +20,5 @@ Dielectrics are crucial for technologies like flash memory, CPUs, photovoltaics,
 ## Example
 
 An example of our implementation is available at [notebooks/dielectric_tensor.ipynb](notebooks/dielectric_tensor.ipynb).
+
+We evaluated our method on the Matbench dataset, see [notebooks/matbench.ipynb](notebooks/matbench.ipynb) for details.
